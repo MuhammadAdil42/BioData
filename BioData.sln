@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BioDataWeb", "BioDataWeb\BioDataWeb.csproj", "{084F857B-400B-43C8-891C-0778575F40EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{084F857B-400B-43C8-891C-0778575F40EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{084F857B-400B-43C8-891C-0778575F40EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{084F857B-400B-43C8-891C-0778575F40EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{084F857B-400B-43C8-891C-0778575F40EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A451C81B-3289-4EF1-BE37-6D0C79594B98}
+	EndGlobalSection
+EndGlobal

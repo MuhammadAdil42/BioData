@@ -1,0 +1,35 @@
+﻿@model Credentials
+
+<form method="post">
+    <div class="container p-3 mt-5" style="border-style:solid;">
+        <div class="row mt-2 p-3 mb-3">
+            <h3 class="form-label text-primary">Edit User</h3>
+        </div>
+        <div asp-validation-summary="All" class="text-danger">
+        </div>
+        <div class="row mt-3 p-4">
+            <label class="form-label text-primary" style="font-size:18px;">First Name</label>
+            <input class="form-control" type="text" asp-for="FirstName" />
+            <span class="text-danger" asp-validation-for="FirstName"></span>
+        </div>
+        <div class="row mt-2 p-4">
+            <label class="form-label text-primary" style="font-size:18px;">Last Name</label>
+            <input class="form-control" type="text" asp-for="LastName" />
+            <span class="text-danger" asp-validation-for="LastName"></span>
+        </div>
+        <div class="row mt-2 p-4">
+            <label class="form-label text-primary" style="font-size:18px;">Cell No.</label>
+            <input class="form-control" type="text" asp-for="CellNo" />
+            <span class="text-danger" asp-validation-for="CellNo"></span>
+        </div>
+        <button class="btn btn-success ms-2" type="submit" style="width:100px;">Update</button>
+        <a class="btn btn-secondary ms-2" style="width:100px;" asp-controller="BioData" asp-action="Index">Back</a>
+    </div>
+</form>
+
+@section Scripts
+    {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

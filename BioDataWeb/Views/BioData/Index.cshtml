@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Credentials>;
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<div class="container p-3">
+    <div class="row mt-2">
+        <div class="col-6 p-2">
+            <h3>User List</h3>
+        </div>
+        <div class="col-6">
+            <a class="btn btn-success float-end" style="width:180px;text-decoration:none; font-size:20px; text-align:center;" asp-controller="BioData" asp-action="CreateUser">
+                <i class="bi bi-plus-circle me-2"></i>  Create User
+             </a>
+        </div>
+    </div>
+    <div class="row mt-4 p-3">
+        <table class="table-bordered table-light" style="text-align:center;">
+            <thead>
+                <th style="width:30%;">First Name</th>
+                <th style="width:30%;">Second Name</th>
+                <th style="width:25%;"> Cell No.</th>
+                <th style="width:15%;">Action</th>
+            </thead>
+            
+            <tbody>
+                    @foreach(var obj in Model)
+                    {
+                        <tr>
+                            <td>
+                              @obj.FirstName 
+                            </td>
+                            <td>
+                               @obj.LastName
+                            </td>
+                            <td>
+                               @obj.CellNo 
+                            </td>
+                            <td>
+                            <a class="btn btn-info m-1 btn-outline-dark" asp-controller="BioData" asp-action="EditUser" asp-route-id="@obj.Id"><i class="bi bi-pencil-fill"></i></a>
+                            <a class="btn btn-danger m-1 btn-outline-dark" asp-controller="BioData" asp-action="RemoveUser" asp-route-id="@obj.Id"><i class="bi bi-trash-fill"></i></a>
+                            </td>
+                        </tr>
+                    }
+              
+            </tbody>
+
+        </table>
+    </div>
+
+</div>
